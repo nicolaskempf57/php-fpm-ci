@@ -11,7 +11,7 @@ INSTALL_DIR=/usr/local/bin
 INSTALL_PATH="${INSTALL_DIR}/sentry-cli"
 
 DOWNLOAD_URL_LOOKUP="SENTRY_DOWNLOAD_${PLATFORM}_${ARCH}"
-DOWNLOAD_URL=(eval echo \$$DOWNLOAD_URL_LOOKUP)
+DOWNLOAD_URL=$(eval echo \$$DOWNLOAD_URL_LOOKUP)
 
 echo "This script will automatically install sentry-cli ${VERSION} for you."
 echo "Installation path: ${INSTALL_PATH}"
